@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* Container */
+
+.container {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 7% 15%;
+}
+
+/* Headings */
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+}
+
+/* Main content */
+
+.main {
+    line-height: 1.5;
+    padding: 4% 7% 7%;
+    width: 50%;
+}
+
+.main p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 46px;
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+/* Main Image */
+
+.bg-blend {
+    background-image: url(/images/image-header-desktop.jpg);
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-size: cover;
+    width: 66%;
+}
+
+/* Stats Section */
+
+.stats {
+    display: flex;
+}
+
+.stats-number {
+    font-weight: 700;
+}
+
+.stats-text {
+    width: 50%;
+}
+
+.text {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 415px) {
+
+    .container {
+        display: block;
+        margin: 20% 5%;
+    }
+
+    .bg-blend {
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        display: block;
+        height: 202px;
+        width: 100%;
+    }
+
+    h1 {
+        padding: 0 5%;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        display: block;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main p {
+        padding: 0 5%;
+    }
+
+    .stats {
+        display: block;
+        padding-bottom: 10%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .stats-text {
+        width: 100%;
+    }
+}
